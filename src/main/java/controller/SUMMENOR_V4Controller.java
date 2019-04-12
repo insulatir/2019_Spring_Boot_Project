@@ -1,6 +1,7 @@
 package controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/lol/summoner/v4/summoners")
 public class SUMMENOR_V4Controller {
     @GetMapping("/lol/summoner/v4/summoners/by-name/{summonerName}")
-    
+    public String getIdByName(@PathVariable String name) {
+
+    }
 }
 
