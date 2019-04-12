@@ -15,7 +15,7 @@ public class SUMMENOR_V4Controller {
 
     @GetMapping("/lol/summoner/v4/summoners/by-name/{summonerName}")
     public String getIdByName(@PathVariable String name) {
-        
+        return summenor_v$Service.getIdByName(name);
     }
 }
 
