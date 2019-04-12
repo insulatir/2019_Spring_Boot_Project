@@ -10,5 +10,7 @@ public class ApiClient {
     private RestTemplate restTemplate;
 
     private final String names = "https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name";
+    private final ParameterizedTypeReference<List<String>> responseType = new ParameterizedTypeReference<List<String>>() {};
+
     
 }
