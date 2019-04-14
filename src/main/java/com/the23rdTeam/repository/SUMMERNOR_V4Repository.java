@@ -13,7 +13,7 @@ public class SUMMERNOR_V4Repository {
     @Autowired
     private MongoTemplate mongoTemplate;
 
-    public String findIdByName(Stinrg name) {
+    public String findIdByName(String name) {
         Query query = new Query();
 
         query.addCriteria(Criteria.where("name").is(name));
