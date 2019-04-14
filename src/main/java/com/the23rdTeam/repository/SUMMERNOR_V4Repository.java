@@ -18,6 +18,6 @@ public class SUMMERNOR_V4Repository {
         query.addCriteria(Criteria.where("name").is(name));
         query.with(Sort.by(Sort.Order.desc("id")));
 
-        return mongoTemplate.findOne(query, null);
+        return null;
     }
 }
