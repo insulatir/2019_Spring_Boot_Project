@@ -19,7 +19,7 @@ public class ApiClient {
     private final ParameterizedTypeReference<List<String>> responseType = new ParameterizedTypeReference<List<String>>() {};
 
     public List<String> getNames() {
-        List<String> responseBody = restTemplate.exchange(names, GET, null, responseType);
+        List<String> responseBody = (List<String>) restTemplate.exchange(names, GET, null, responseType);
         return responseBody;
     }
 }
