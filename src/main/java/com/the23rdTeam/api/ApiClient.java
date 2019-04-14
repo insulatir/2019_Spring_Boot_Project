@@ -2,6 +2,7 @@ package com.the23rdTeam.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -18,8 +19,7 @@ public class ApiClient {
     private final ParameterizedTypeReference<List<String>> responseType = new ParameterizedTypeReference<List<String>>() {};
 
     public List<String> getNames() {
-        List<String> responseBody = restTemplate.exchange(names, GET, null, responseType)
-                .getBody();
-        return responseBody;
+        String[] responseBody = restTemplate.exchange(names, GET, null, String[].class);
+        return null;
     }
 }
