@@ -1,4 +1,4 @@
-package config;
+package com.the23rdTeam.config;
 
 import com.google.common.base.Predicate;
 import com.google.common.base.Predicates;

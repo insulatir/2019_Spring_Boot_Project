@@ -1,4 +1,4 @@
-package api;
+package com.the23rdTeam.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
