@@ -1,12 +1,11 @@
-package repository;
+package com.the23rdTeam.repository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.stereotype.Repository;
 import org.springframework.data.mongodb.core.query.Query;
-import service.SUMMENOR_V$Service;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class SUMMERNOR_V4Repository {
